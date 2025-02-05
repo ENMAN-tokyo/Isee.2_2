@@ -1,0 +1,60 @@
+/* 共通変数の定義 */
+:root {
+  --bg-color-main: #f4f4f9;
+  --hover-bg-color: #e8f0fe;
+  --text-color-main: #333;
+  --border-color-main: #ccc;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+  
+.result-title {
+  font-size: 2rem;
+  color: #1E899D;
+}
+  
+.result-text {
+  font-size: 1.1rem;
+  color: var(--text-color-main);
+}
+  
+.highlight {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #C45C49;
+}
+
+.sub-highlight {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #C45C49;
+}
+
+.LINE-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-color-main);
+}
+
+.LINE-text {
+  font-size: 0.9rem;
+  color: var(--text-color-main);
+}
+
+.LINE-link {
+  font-size: 0.9rem;
+  color: #1E899D;
+  text-decoration: underline;
+}
+
+.LINE-link:hover {
+  text-decoration: none;
+}
+  

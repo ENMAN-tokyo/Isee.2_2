@@ -1,0 +1,57 @@
+/* 全体のレイアウト */
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* コンテンツを重ねるために必要 */
+  text-align: center; /* テキストを中央揃え */
+  background-color: #f4f4f9;
+}
+
+/* 背景画像に半透明のオーバーレイを追加 */
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../image/ic.png');  /* 画像を背景に設定 */
+  background-size: 200px 200px;  /* 画像のサイズを指定 */
+  background-repeat: repeat;     /* 画像をタイル状に繰り返し表示 */
+  opacity: 0.05;  /* 画像の透明度を0.05に設定 */
+  z-index: 0;  /* 擬似要素が背景に来るように設定 */
+}
+
+.ic {
+  width: 300px; /* ロゴ画像の幅（調整可能） */
+  height: auto;
+}
+    
+/* タイトルのスタイル */
+.title {
+  color: #333;
+  font-size: 30px;
+  margin-bottom: 20px; /* タイトルとボタンの間にスペースを追加 */
+}
+  
+/* ボタンのスタイル */
+.consult-button {
+  padding: 20px 40px; /* ボタンの大きさを2倍に調整 */
+  margin-top: 30px; /* ボタンと入力欄の間隔を広く */
+  font-size: 20px; /* フォントサイズ（必要に応じて調整） */
+  background-color: #1E899D; /* ボタンの背景色 */
+  color: white; /* ボタンのテキスト色 */
+  border: none;
+  border-radius: 5px; /* 角丸 */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1;  /* ボタンもテキストと同じように擬似要素の上に表示 */
+}
+    
+/* ボタンのホバー時の効果 */
+.consult-button:hover {
+  background-color: #14667F; /* ホバー時の背景色 */
+}
